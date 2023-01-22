@@ -1,0 +1,11 @@
+result = 0
+i = 0
+while i < 5:
+    x = int(input('Choose an positive, even number :'))
+    if (x % 2 != 0) or (x <= 0):
+        print('Number is not even/positive, choose one more time')
+        continue
+    else:
+        result += x
+        i += 1
+print('Sum of five positive, even numbers is:', result)
